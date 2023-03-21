@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Exercícios | Ex04</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main-container">
+		<div class="form-group">
+			<span class="ex-titulo">Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.</span>
+			<h2 class="main-title">Eleições 2k22</h2>
+			<div class="input-box">
+					<input type="number" id="eleitores" placeholder="Digite o número de eleitores">
+			</div>
+			<div class="input-box">
+				<input type="number" id="votos-brancos" placeholder="Digite o número de votos brancos">
+			</div>
+			<div class="input-box">
+				<input type="number" id="votos-nulos" placeholder="Digite o número de votos nulos">
+			</div>
+			<div class="input-box">
+				<input type="number" id="votos-validos" placeholder="Digite o número de votos válidos">
+			</div>			
+			<div class="btn-box">
+				<button class="btn" onclick="calcularPercentuais()">Calcular</button>
+			</div>
+			<div class="res">
+				<p class="four">Votos Brancos: <span id="brancos"></span></p>
+				<p class="four">Votos Nulos: <span id="nulos"></span></p>
+				<p class="four">Votos Válidos: <span id="validos"></span></p>			
+			</div>
+		</div>		
+	</div>
+
+	<script src="app.js"></script>
+
+</body>
+</html>
